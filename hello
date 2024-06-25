@@ -1,4 +1,2 @@
 #! usr/bin/env ruby
 
-print(2+2)
-
