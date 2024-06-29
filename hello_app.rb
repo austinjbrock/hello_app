@@ -1,6 +1,8 @@
 require "sinatra"
 
 get "/" do
-  "This Is my first deployment"
+  DAYNAMES = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+  dayname = DAYNAMES[Time.now.wday]
+  "Hello world! happy #{dayname}"
 end
 
